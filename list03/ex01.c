@@ -8,9 +8,10 @@ Explanation: 10 = 3! + 2! + 2!
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX 10
+
 
 int* candidates;
+
 
 void print(int *a, int n) {
     printf("%d!", a[0]);
@@ -40,7 +41,7 @@ int fatSum(int n) {
         }
         else candidate--;        
     }
-    // return the number of factorials used to calculate the sum
+    // Return the number of factorials used to calculate the sum
     return i;
 }
 
